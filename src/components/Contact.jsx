@@ -7,7 +7,6 @@ import { EarthCanvas } from './canvas'
 import { SectionWrapper } from '../hoc'
 import { slideIn } from '../utils/motion'
 
-
 const Contact = () => {
 
   const formRef= useRef()
@@ -20,9 +19,51 @@ const Contact = () => {
 
   const [loading,setLoading] = useState(false)
 
-  const handleChange = (e)=>{}
+  const handleChange = (e)=>{
+    const {name,value} = e.target
+    setForm({...form,[name]:value})
 
-  const handleSubmit = (e)=>{}
+  }
+
+  const handleSubmit = (e)=>{
+
+    e.preventDefault()
+
+    //template_gon6lbw
+//service_8do2ipm
+//hhGt9QXiGSWeRTCtp
+
+    setLoading(true)
+
+    emailjs.send(
+      'service_8do2ipm',
+      'template_gon6lbw',
+      {
+        from_name:form.name,
+        to_name:'Ameen',
+        from_email:form.email,
+        to_email:'amipk2001@gmail.com',
+        message:form.message,
+
+      },
+      'hhGt9QXiGSWeRTCtp'
+      )
+
+      .then(()=>{
+        setLoading(false)
+        alert('Thank You I will Get back to you as soon as possible')
+        setForm({
+          name:'',
+          email:'',
+          message:''
+        })
+      },(error)=>{
+        setLoading(false)
+        console.log(error);
+        alert('something went wrong')
+      })
+
+  }
 
   return (
     <div className='xl:mt-12 xl:flex-row
@@ -43,22 +84,22 @@ const Contact = () => {
         >
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Name</span>
-            <input type="text" name="name" id="" value={form.name} placeholder='whats your name'
-            className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+            <input  type="text" name="name" id="" value={form.name} placeholder='whats your name'
+            onChange={handleChange} className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
 
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Email</span>
             <input type="email" name="email" id="" value={form.email} placeholder='whats your email'
-            className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+           onChange={handleChange} className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
 
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Message</span>
             <textarea rows='7'  name="message" id="" value={form.message} placeholder='what do you want to say'
-            className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+           onChange={handleChange}  className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
 
