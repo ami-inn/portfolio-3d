@@ -8,10 +8,10 @@ import {
   Hero,
   Navbar,
   Tech,
-  Works,
+  Works, 
   StarsCanvas,
 } from "./components";
-
+console.log("App component loaded");
 const App = () => {
   return (
      <BrowserRouter>
