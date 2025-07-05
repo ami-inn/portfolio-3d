@@ -3,6 +3,7 @@ import { Canvas } from '@react-three/fiber'
 // import { OrbitControls } from '@react-three/drei'
 import { Decal,Float,OrbitControls,Preload,useTexture } from '@react-three/drei'
 import CanvasLoader from '../Loader'
+import { useRef, useEffect } from 'react';
 
 const Ball = (props) => {
 
@@ -35,20 +36,57 @@ const Ball = (props) => {
 }
 
 const BallCanvas = ({ icon }) => {
+  // Custom OrbitControls settings for oscillating rotation
+  // We'll use a ref and effect to control the azimuthal angle
+
+  const controlsRef = useRef();
+
+  useEffect(() => {
+    let direction = 1;
+    let angle = -Math.PI / 2;
+    let frame;
+
+    const animate = () => {
+      if (!controlsRef.current) return;
+      // Oscillate between min and max azimuth angle
+      angle += direction * 0.01;
+      if (angle > Math.PI / 2) {
+        angle = Math.PI / 2;
+        direction = -1;
+      }
+      if (angle < -Math.PI / 2) {
+        angle = -Math.PI / 2;
+        direction = 1;
+      }
+      controlsRef.current.setAzimuthalAngle(angle);
+      controlsRef.current.update();
+      frame = requestAnimationFrame(animate);
+    };
+
+    animate();
+    return () => cancelAnimationFrame(frame);
+  }, []);
+
   return(
     <Canvas
-    frameloop='demand'
-    gl={{ preserveDrawingBuffer: true }}
-  >
-    <Suspense fallback={<CanvasLoader />}>
-      <OrbitControls
-        enableZoom={false}
-      />
-      <Ball imgUrl={icon}/>
-    </Suspense>
-
-    <Preload all />
-  </Canvas>
+      frameloop='always'
+      gl={{ preserveDrawingBuffer: true }}
+    >
+      <Suspense fallback={<CanvasLoader />}>
+        <OrbitControls
+          ref={controlsRef}
+          enableZoom={false}
+          enablePan={false}
+          rotateSpeed={2}
+          minAzimuthAngle={-Math.PI / 2}
+          maxAzimuthAngle={Math.PI / 2}
+          minPolarAngle={Math.PI / 2.2}
+          maxPolarAngle={Math.PI / 1.8}
+        />
+        <Ball imgUrl={icon} />
+      </Suspense>
+      <Preload all />
+    </Canvas>
   )
  
   }
