@@ -15,6 +15,7 @@ import {
   git,
   figma,
   docker,
+  nextJs,
   socket,
   meta,
   starbucks,
@@ -266,27 +267,27 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
+    name: "HTML5",
     icon: html,
   },
   {
-    name: "CSS 3",
+    name: "CSS3",
     icon: css,
   },
   {
-    name: "JavaScript",
+    name: "js",
     icon: javascript,
   },
-  // {
-  //   name: "TypeScript",
-  //   icon: typescript,
-  // },
   {
-    name: "React JS",
+    name: "ts",
+    icon: typescript,
+  },
+  {
+    name: "rjs",
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
+    name: "rtkt",
     icon: redux,
   },
   {
@@ -297,6 +298,15 @@ const technologies = [
     name: "Node JS",
     icon: nodejs,
   },
+  {
+    name: "Docker",
+    icon: docker,
+  },
+  {
+    name: "Next JS",
+    icon: nextJs,
+  },
+
   {
     name: "MongoDB",
     icon: mongodb,
