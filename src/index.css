@@ -13,7 +13,7 @@
     @apply w-36 h-full absolute bottom-0 z-20;
   }
   .timeline-wrapper {
-    @apply absolute 2xl:left-[35.5vw]  top-0 xl:left-[36.7vw] md:left-9 left-5 h-full flex justify-center;
+    @apply absolute 2xl:left-[32.2vw]  top-0 xl:left-[31.7vw] md:left-9 left-5 h-full flex justify-center;
   }
 
   .timeline {

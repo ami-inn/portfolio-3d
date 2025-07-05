@@ -178,18 +178,23 @@ const socialImgs = [
   {
     name: "insta",
     imgPath: "/images/insta.png",
+    link: "https://www.instagram.com/iam_ami.in/",
   },
   {
     name: "fb",
     imgPath: "/images/fb.png",
+    link:""
   },
   {
     name: "x",
     imgPath: "/images/x.png",
+       link: "https://www.instagram.com/iam_ami.in/",
+
   },
   {
     name: "linkedin",
     imgPath: "/images/linkedin.png",
+    link: "https://www.linkedin.com/in/ameen-pk/",
   },
 ];
 
