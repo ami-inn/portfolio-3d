@@ -93,11 +93,15 @@ const ExperienceTwo = () => {
     }, "<"); // position parameter - insert at the start of the animation
   }, []);
   return (
-    <>
-      <motion.div variants={textVariant()}>
+    <section className="mx-auto sm:px-16 px-12">
+      {/* <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>💼 My Career Overview</p>
         <h2 className={styles.sectionHeadText}>Professional Experience</h2>
-      </motion.div>
+      </motion.div> */}
+          <TitleHeader
+          title="Professional Work Experience"
+          sub="💼 My Career Overview"
+        />
 
       <div className="mt-32 relative">
         <div className="relative z-50 xl:space-y-32 space-y-10">
@@ -139,8 +143,9 @@ const ExperienceTwo = () => {
           ))}
         </div>
       </div>
-    </>
+    </section>
   );
 };
 
-export default SectionWrapper(ExperienceTwo, "work");
+// export default SectionWrapper(ExperienceTwo, "work");
+export default ExperienceTwo

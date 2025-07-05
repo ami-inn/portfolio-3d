@@ -13,15 +13,17 @@
     @apply w-36 h-full absolute bottom-0 z-20;
   }
   .timeline-wrapper {
-    @apply absolute top-0 xl:left-[23.3vw] md:left-12 left-5 h-full flex justify-center;
+    @apply absolute 2xl:left-[35.5vw]  top-0 xl:left-[36.7vw] md:left-9 left-5 h-full flex justify-center;
   }
 
   .timeline {
-    @apply absolute z-30 h-[110%] -top-10  w-14 md:w-28 bg-primary;
+    @apply absolute z-30 h-[110%] -top-10  w-14 md:w-28 bg-primary
+     /* sm:bg-violet-200 md:bg-red-200 lg:bg-green-200 xl:bg-pink-400 2xl:bg-blue-500 */
+      ;
   }
 
   .timeline-logo {
-    @apply md:w-[80px] md:h-[80px] w-[40p] h-[40px] flex-none rounded-full flex justify-center items-center md:-translate-y-7 border border-black-100 bg-black-100;
+    @apply md:w-[80px] md:h-[80px] w-[40px] h-[40px] flex-none rounded-full flex justify-center items-center md:-translate-y-7 border border-black-100 bg-black-100;
   }
   .card-border {
     @apply border border-black-100 bg-black-100;
@@ -305,10 +307,10 @@
 
 .gradient-edge:nth-of-type(1) {
   left: 0;
-  background: rgb(0, 0, 0);
+  background: rgb(5, 8, 22);
   background: linear-gradient(
     90deg,
-    rgba(0, 0, 0, 1) 0%,
+    rgba(5, 8, 22, 1) 0%,
     rgba(255, 255, 255, 0) 100%
   );
 }
@@ -316,7 +318,7 @@
   right: 0;
   background: linear-gradient(
     -90deg,
-    rgba(0, 0, 0, 1) 0%,
+    rgba(5, 8, 22, 1) 0%,
     rgba(255, 255, 255, 0) 100%
   );
 }
