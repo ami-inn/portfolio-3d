@@ -12,6 +12,7 @@ import {
   StarsCanvas,
 } from "./components";
 import ExperienceTwo from "./components/ExperienceTwo";
+import LogoSection from "./components/LogoSection";
 console.log("App component loaded");
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
         <About />
         {/* <Experience /> */}
         <ExperienceTwo/>
+        <LogoSection/>
         <Tech />
         <Works />
         {/* <Feedbacks /> */}

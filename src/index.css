@@ -13,7 +13,7 @@
     @apply w-36 h-full absolute bottom-0 z-20;
   }
   .timeline-wrapper {
-    @apply absolute top-0 xl:left-[23vw] md:left-12 left-5 h-full flex justify-center;
+    @apply absolute top-0 xl:left-[23.3vw] md:left-12 left-5 h-full flex justify-center;
   }
 
   .timeline {
@@ -29,6 +29,10 @@
   .hero-badge {
     @apply bg-black-200 py-2 px-4 rounded-full w-fit text-sm md:text-base;
   }
+    .gradient-edge {
+    @apply w-36 h-full absolute bottom-0 z-20;
+  }
+
 }
 
 @layer components {
@@ -365,3 +369,32 @@
 .card:hover::before {
   opacity: 1;
 }
+
+
+/* marquee */
+.marquee {
+  width: 100dvw;
+  overflow: hidden;
+  position: relative;
+}
+.marquee-box {
+  display: flex;
+  align-items: center;
+  width: 200%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  animation: marquee 60s linear infinite;
+}
+.marquee-item {
+  float: left;
+}
+@keyframes marquee {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+/* marquee end */
