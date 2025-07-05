@@ -45,14 +45,13 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] "
       >
-        I am a proficient software developer with extensive experience in
-        JavaScript, along with expertise in frameworks like React and Node.js.
-        Additionally, I have a basic understanding of Three.js. My skill set
-        also encompasses MongoDB, Node, Socket.io, Bootstrap, and HTML. I am
-        enthusiastic about bringing your ideas to fruition. Furthermore, I pride
-        myself on being a self-learner, enabling me to quickly adapt to new
-        technologies and concepts. Let's team up to turn your visions into
-        reality!
+        MERN Stack & Web3 Developer specializing in React.js, Node.js, and
+        blockchain integration. I build high-performance, scalable full-stack
+        apps with clean, maintainable code—delivered on time. Passionate about
+        decentralized tech, UI/UX excellence, and optimizing performance. A
+        self-learner constantly exploring the latest in web dev and Web3 to
+        create future-proof solutions. Let’s turn ideas into secure,
+        user-centric digital experiences.
       </motion.p>
 
       <p className={`${styles.sectionSubText} mt-16 mb-3`}>Services</p>
@@ -62,7 +61,6 @@ const About = () => {
         ))}
       </div>
       <AnimatedCounter />
-
     </>
   );
 };
