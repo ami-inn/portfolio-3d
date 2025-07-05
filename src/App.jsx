@@ -11,6 +11,7 @@ import {
   Works, 
   StarsCanvas,
 } from "./components";
+import ExperienceTwo from "./components/ExperienceTwo";
 console.log("App component loaded");
 const App = () => {
   return (
@@ -21,7 +22,8 @@ const App = () => {
           <Hero />
         </div>
         <About />
-        <Experience />
+        {/* <Experience /> */}
+        <ExperienceTwo/>
         <Tech />
         <Works />
         {/* <Feedbacks /> */}

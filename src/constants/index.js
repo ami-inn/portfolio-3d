@@ -42,47 +42,60 @@ const counterItems = [
   { value: 50, suffix: "+", label: "Completed Projects" },
   { value: 95, suffix: "%", label: "Client Retention Rate" },
 ];
-
 const expCards = [
   {
     review:
-      "Ameen brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-    imgPath: "/images/exp1.png",
-    logoPath: "/images/logo1.png",
-    title: "Frontend Developer",
-    date: "January 2023 - Present",
+      "Ameen led the development of 5+ Web3 applications at BlockOn Ventures, demonstrating exceptional technical leadership in blockchain integration and performance optimization. His architectural decisions significantly improved our production deployments.",
+    imgPath: "/images/blockon-ventures.png", // Update path
+    // Update path
+    title: "React.js Developer (Web3 Specialist)",
+    company: "BlockOn Ventures",
+    date: "May 2024 – January 2025",
     responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
+      "Architected NuChain Explorer/Validator and led Telegram Mini Apps development, delivering ahead of schedule.",
+      "Implemented cross-chain wallet integrations (MetaMask, WalletConnect) and custom transaction handlers.",
+      "Designed 50+ reusable React components, optimized apps with code-splitting, lazy loading, and API caching.",
+      "Established testing standards (Jest/Vitest), mentored 3 junior developers, and improved codebase maintainability by 40%.",
     ],
-  },
-  {
+    techStack:
+      "React, Next.js, TypeScript, Web3.js, Ethers.js, Three.js, Node.js, MongoDB, Docker, AWS",
+    },
+    {
     review:
-      "Ameen’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-    imgPath: "/images/exp2.png",
-    logoPath: "/images/logo2.png",
-    title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
+      "Ameen made critical contributions to Dial.WTF and other Web3 projects at Neogencode, particularly in wallet authentication and WebRTC implementations. His performance optimizations set new standards for our team.",
+    imgPath: "/images/neogencode.png", // Update path
+    logoPath: "/images/neogencode-logo.png", // Update path
+    title: "React.js Developer (Web3)",
+    company: "Neogencode Technologies",
+    date: "December 2023 – April 2024 | February 2025 – Present",
     responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
+      "Developed core functionality for Dial.WFT (WebRTC peer-to-peer calling with wallet auth)",
+      "Integrated smart contracts using Ethers.js for blockchain interactions",
+      "Returned in 2025 to lead urgent Next.js migration for Dial.WTF features",
+      "Conducted code reviews maintaining 95%+ code quality standards",
+      "Collaborated with junior developers on Web3 implementation patterns",
     ],
+    techStack:
+      "React, Next.js, Ethers.js, WebRTC, Web3.js, Node.js, PostgreSQL, Redis",
   },
-  {
-    review:
-      "Ameen’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
-    imgPath: "/images/exp3.png",
-    logoPath: "/images/logo3.png",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
-    responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
-    ],
-  },
+  // {
+  //   review:
+  //     "As a freelance contributor, Ameen delivered critical frontend solutions for client projects including blockchain explorers and validator dashboards, often under tight deadlines.",
+  //   imgPath: "/images/freelance.png", // Update path
+  //   logoPath: "/images/freelance-logo.png", // Update path
+  //   title: "Freelance React Developer",
+  //   company: "Client Projects",
+  //   date: "2023 – Present",
+  //   responsibilities: [
+  //     "Built responsive interfaces for 3+ blockchain explorer dashboards",
+  //     "Implemented real-time data visualization for validator networks",
+  //     "Contributed to Dial.WTF's frontend architecture during critical phases",
+  //     "Developed custom Web3 hooks for wallet connection flows",
+  //     "Optimized client-side rendering performance by 35%",
+  //   ],
+  //   techStack:
+  //     "React, TypeScript, Tailwind CSS, Web3.js, REST APIs, WebSockets",
+  // },
 ];
 const socialImgs = [
   {
@@ -407,5 +420,5 @@ export {
   projects,
   counterItems,
   expCards,
-  socialImgs
+  socialImgs,
 };
