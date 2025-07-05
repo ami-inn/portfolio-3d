@@ -25,6 +25,9 @@ import {
   jobit,
   tripguide,
   threejs,
+  Aeshion,
+  Taskify,
+  voicee,
 } from "../assets";
 
 const words = [
@@ -421,67 +424,95 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Aeshion",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Welcome to Aeshion – Your Ultimate Fashion Destination. Explore our user-friendly e-commerce website where you can discover and purchase dresses that match your style.Elevate your fashion choices and make them your own with Aeshion.",
+    tags: [
+      {
+        name: "EJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Node.js",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: Aeshion,
+    source_code_link: "https://github.com/ami-inn/aeshion-ecommerce/",
+  },
+  {
+    name: "Taskify",
+    description:
+      "Introducing Taskify – Your Team's Task Management Solution. Taskify offers a robust toolkit to enhance collaboration and productivity. its a complete task manager that caters to your team's every need.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Node.js",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "MongoDb",
         color: "pink-text-gradient",
       },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
       {
-        name: "react",
+        name: "Express",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Socket.io",
         color: "green-text-gradient",
       },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: Taskify,
+    source_code_link: "https://github.com/ami-inn/taskify",
   },
   {
-    name: "Trip Guide",
+    name: "Voicee",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Voicee is an AI-powered interview preparation platform featuring real-time voice interviews with an AI interviewer. It generates personalized questions based on your role, experience, and tech stack, provides detailed feedback with scoring across multiple categories, and securely manages user authentication with Firebase. Users can track their interview history and visualize the tech stack focus areas with technology icons.",
     tags: [
       {
         name: "nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwindcss",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "zod",
+        color: "green-text-gradient",
+      },
+      {
+        name: "google ai",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "vai ai",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "radix ui",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: voicee,
+    source_code_link: "https://github.com/ami-innpk/voicee",
   },
 ];
 
