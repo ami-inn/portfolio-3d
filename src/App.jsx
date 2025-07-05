@@ -13,6 +13,9 @@ import {
 } from "./components";
 import ExperienceTwo from "./components/ExperienceTwo";
 import LogoSection from "./components/LogoSection";
+import Testimonial from "./components/Testimonial";
+import FeatureCard from "./components/FeatureCard";
+import Footer from "./components/Footer";
 console.log("App component loaded");
 const App = () => {
   return (
@@ -28,11 +31,14 @@ const App = () => {
         <LogoSection/>
         <Tech />
         <Works />
+        <Testimonial/>
+        {/* <FeatureCard/> */}
         {/* <Feedbacks /> */}
         <div className='relative z-0'>
           <Contact />
           <StarsCanvas />
         </div>
+        <Footer/>
       </div>
     </BrowserRouter>
   );

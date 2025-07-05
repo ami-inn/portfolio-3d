@@ -18,7 +18,7 @@ const LogoIcom = ({ logo }) => {
 
 const LogoSection = () => {
   return (
-    <div className="md:my-20 my-8 relative">
+    <div className="md:my-20 my-8 relative overflow-hidden">
       <div className="gradient-edge" />
       <div className="gradient-edge" />
 
