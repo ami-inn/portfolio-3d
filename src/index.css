@@ -6,12 +6,12 @@
 
 @layer components {
   .hero-text {
-    @apply flex flex-col justify-center md:text-[30px] text-[15x] font-semibold relative z-10 pointer-events-none;
+    @apply flex flex-col justify-center md:text-[35px] text-[25x] font-semibold relative z-10 pointer-events-none;
     img {
       @apply w-[28px] h-[28px] md:w-[35px] md:h-[35px] object-contain;
     }
     .slide {
-      @apply absolute pt-0 px-2 md:px-5 py-[30px] h-[35px] md:h-[45px] md:translate-y-1 translate-y-0 overflow-hidden;
+      @apply absolute pt-0 px-2 md:px-5 py-[30px] h-[38px] md:h-[48px] md:translate-y-1 translate-y-0 overflow-hidden;
     }
   }
 }

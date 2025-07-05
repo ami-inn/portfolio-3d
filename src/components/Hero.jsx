@@ -37,9 +37,13 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
+          <h1 className={`${styles.heroHeadText} text-white `}>
             Hi, I'm <span className="text-[#915EFF]">Ameen</span>
           </h1>
+            <p className="text-white-50 mb-3 md:text-lg relative z-10 max-w-[500px] text-wrap pointer-events-none">
+              a passionate developer , who loves turning
+              ideas into impactful digital experiences.
+            </p>
           <div className="hero-text">
               <h1>
                 Shaping
@@ -65,10 +69,7 @@ const Hero = () => {
               <h1>into Real Projects</h1>
               <h1>that deliver results</h1>
             </div>
-             <p className="text-white-50 mt-3 md:text-lg relative z-10 max-w-[500px] text-wrap pointer-events-none">
-              a passionate developer , who loves turning
-              ideas into impactful digital experiences.
-            </p>
+           
           {/* <p className={`${styles.heroSubText} mt-2 text-white-100`}>
           
           I specialize in crafting compelling user interfaces and <br className="sm:block hidden" />designing impactful web applications. 
