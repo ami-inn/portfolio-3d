@@ -93,7 +93,7 @@ const ExperienceTwo = () => {
     }, "<"); // position parameter - insert at the start of the animation
   }, []);
   return (
-    <section className="mx-auto sm:px-16 px-12">
+    <section className="mx-auto sm:px-16 mt-10 px-12">
       {/* <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>💼 My Career Overview</p>
         <h2 className={styles.sectionHeadText}>Professional Experience</h2>

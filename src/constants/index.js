@@ -266,10 +266,10 @@ const services = [
 ];
 
 const technologies = [
-  {
-    name: "HTML5",
-    icon: html,
-  },
+  // {
+  //   name: "HTML5",
+  //   icon: html,
+  // },
   {
     name: "CSS3",
     icon: css,
@@ -298,10 +298,10 @@ const technologies = [
     name: "Node JS",
     icon: nodejs,
   },
-  {
-    name: "Docker",
-    icon: docker,
-  },
+  // {
+  //   name: "Docker",
+  //   icon: docker,
+  // },
   {
     name: "Next JS",
     icon: nextJs,
