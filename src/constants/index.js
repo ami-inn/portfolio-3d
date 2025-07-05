@@ -46,8 +46,9 @@ const expCards = [
   {
     review:
       "Ameen led the development of 5+ Web3 applications at BlockOn Ventures, demonstrating exceptional technical leadership in blockchain integration and performance optimization. His architectural decisions significantly improved our production deployments.",
-    imgPath: "/images/blockon-ventures.png", // Update path
+    imgPath: "/images/blockon.png", // Update path
     // Update path
+    logoPath: "/images/blockonlogo.png", // Update path
     title: "React.js Developer (Web3 Specialist)",
     company: "BlockOn Ventures",
     date: "May 2024 – January 2025",
@@ -63,8 +64,8 @@ const expCards = [
     {
     review:
       "Ameen made critical contributions to Dial.WTF and other Web3 projects at Neogencode, particularly in wallet authentication and WebRTC implementations. His performance optimizations set new standards for our team.",
-    imgPath: "/images/neogencode.png", // Update path
-    logoPath: "/images/neogencode-logo.png", // Update path
+    imgPath: "/images/neogen.png", // Update path
+    logoPath: "/images/neogenlogo.png", // Update path
     title: "React.js Developer (Web3)",
     company: "Neogencode Technologies",
     date: "December 2023 – April 2024 | February 2025 – Present",

@@ -95,8 +95,8 @@ const ExperienceTwo = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>What i have done so far</p>
-        <h2 className={styles.sectionHeadText}>My Knowledge</h2>
+        <p className={styles.sectionSubText}>💼 My Career Overview</p>
+        <h2 className={styles.sectionHeadText}>Professional Experience</h2>
       </motion.div>
 
       <div className="mt-32 relative">
